@@ -1,27 +1,97 @@
 # finance_backend
+## API
+### Response wrapper
+```
+{
+    message: str
+    payload: dict
+    success: bool
+}
+```
 
-# MODEL DATA
+### Get income
+GET /incomes
+#### Request
+```
+{
+    filters: {
+        date_to: str
+        date_from: str
+        category_id: id
+    }
+}
+```
 
-Expenses_categories
-expenses_categorypk_id
-value
+#### Response
+```
+{
+    incomes: [
+        {
+            income_category_id: int
+            value: float
+            datetime: str
+        },
+        {
+            income_category_id: int
+            value: float
+            datetime: str
+        }
+    ]
+}
+```
 
-Expenses
-expenses_pk_id
-expenses_category_pk_id
-datetime
-value
 
-Incomes_category_names
-pk_id
-name
+### Add income
+ POST /incomes
 
-Incomes
-pk_id
-incomes_category_names_pk_id
-value
+#### Request
+```
+{
+    income_category_id: int
+    value: float
+    datetime: str
+}
+```
 
-Piggy_bank
-pk_id
-value
+#### Response
+```
+{}
+```
 
+
+### Delete income
+DEL /incomes/<id: int>
+
+#### Request
+```
+{}
+```
+
+#### Response
+```
+{}
+```
+
+### PUT /incomes/<id: int>
+#### Request
+```
+{
+    income_category_id: int
+    value: float
+    datetime: str
+}
+```
+
+#### Response
+```
+{}
+```
+
+### POST /incomes/categories
+
+### POST /expenses
+### GET /expenses
+### DEL /expenses
+### PUT /expenses
+
+### POST /expenses/categories
