@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from .test import router as test_router
+from .incomes import router as incomes_router
 
 router = APIRouter()
 
-router.include_router(test_router, prefix="/test", tags=["Test"])
+router.include_router(incomes_router, prefix="/incomes", tags=["Incomes"])
