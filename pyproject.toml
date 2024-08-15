@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "finance_backend"
+version = "0.0.1"
+description = "finance_backend"
+authors = ["Finlitvin <ros.litvin@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12.4"
+fastapi = "^0.111.1"
+pydantic-settings = "^2.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+ruff = "^0.5.5"
+
+[build-system]
+requires = ["poetry-core>=1.8.3"]
+build-backend = "poetry.core.masonry.api"

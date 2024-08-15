@@ -1,0 +1,30 @@
+line-length = 79
+
+exclude = [
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".pyenv",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "venv",
+    "proto",
+    "poetry.lock",
+    "pyproject.toml",
+    "Makefile",
+    ".dockerignore"
+]
+
+[lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "UP",
+    "N"
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401", "F403"]

@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier
+_commit: v2.0.1
+_src_path: https://github.com/Finlitvin/fastapi_poetry_template
+python_version: 3.12.4
+service_author: Finlitvin <ros.litvin@gmail.com>
+service_description: finance_backend
+service_name: finance_backend
+service_version: 0.0.1
+_src_path: gh:Finlitvin/fastapi_poetry_template
